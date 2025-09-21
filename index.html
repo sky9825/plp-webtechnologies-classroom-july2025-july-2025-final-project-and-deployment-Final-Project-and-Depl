@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DreamTrip Africa</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">DreamTrip Africa</div>
+      <div id="menu-toggle">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#booking">Booking</a></li>
+      </ul>
+    </nav>
+  </header>
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="hero-content fade-in">
+    <h1>Welcome to DreamTrip Africa</h1>
+    <p>Your gateway to unforgettable travel and tour experiences across Africa.</p>
+    <a href="#booking" class="btn">Book Your Adventure</a>
+
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="about fade-in">
+  <div class="container">
+    <h2>About DreamTrip Africa</h2>
+    <p>
+      At DreamTrip Africa Travel & Tours, we specialize in creating memorable journeys 
+      tailored to your dreams. From breathtaking safaris to relaxing beach getaways, 
+      we bring you closer to Africa’s beauty and culture.
+    </p>
+    <h2>Who We Are</h2>
+    <p>
+      We are passionate travel enthusiasts and local experts dedicated to giving you 
+      authentic, safe, and stress-free adventures across Africa.
+    </p>
+    <h2>Our Mission</h2>
+    <p>
+      Our mission is to make travel in Africa seamless and exciting, offering 
+      affordable packages, personalized experiences, and world-class service for every traveler.
+    </p>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="services" style="background: var(--accent);">
+  <div class="container">
+    <h2 class="fade-in">Our Services</h2>
+    <div class="service-grid">
+      <div class="service slide-left">
+        <h3>Safari Adventures</h3>
+        <p>Experience the thrill of African safaris with expert guides and unforgettable wildlife encounters.</p>
+      </div>
+      <div class="service fade-in">
+        <h3>Vacation Packages</h3>
+        <p>Relax on exotic beaches, explore cultural landmarks, and enjoy all-inclusive holiday deals across Africa.</p>
+      </div>
+      <div class="service slide-right">
+        <h3>Custom Travel Planning</h3>
+        <p>Personalized itineraries designed to suit your interests, schedule, and budget for a stress-free journey.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="portfolio fade-in">
+    <div class="container">
+      <h2>Our Work</h2>
+      <div class="portfolio-grid">
+              <img src="images/pic 2.jpg" alt="Portfolio 1"/>
+        <img src="images/pic 3.jpg" alt="Portfolio 2"/>
+        <img src="images/pic 4.jpg" alt="Portfolio 3"/>
+        <img src="images/pic 5.jpg" alt="Portfolio 4"/>
+      </div>
+    </div>
+  </section>
+
+ <!-- Testimonials -->
+<section id="testimonials" class="testimonials fade-in">
+  <div class="container">
+    <h2>What Our Travelers Say</h2>
+    <div class="testimonial-wrapper">
+      <div class="testimonial-track" id="testimonial-track">
+        <div class="testimonial">
+          <blockquote>
+            “DreamTrip Africa planned the most amazing safari for our family. 
+            Everything was seamless, from booking to the actual trip. Highly recommend!”
+            <cite>- Sarah W., USA</cite>
+          </blockquote>
+        </div>
+        <div class="testimonial">
+          <blockquote>
+            “Our beach getaway in Mombasa was unforgettable. Beautiful hotel, 
+            great activities, and excellent customer service.”
+            <cite>- David K., Nairobi</cite>
+          </blockquote>
+        </div>
+        <div class="testimonial">
+          <blockquote>
+            “The custom itinerary they created for our honeymoon in Zanzibar 
+            was perfect. Truly a dream come true!”
+            <cite>- Anita & James, UK</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Booking Section -->
+<section id="booking" class="booking fade-in">
+  <div class="container">
+    <h2>Book Your Dream Trip</h2>
+    <p>Plan your next adventure with DreamTrip Africa. Fill out the form below, and we'll contact you shortly.</p>
+    
+    <form id="booking-form" action="https://formspree.io/f/YOUR_ENDPOINT" method="POST" class="booking-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="destination">Destination</label>
+        <input type="text" id="destination" name="destination" placeholder="e.g. Maasai Mara, Mombasa, Zanzibar" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="travel-dates">Travel Dates</label>
+        <input type="text" id="travel-dates" name="travel-dates" placeholder="e.g. June 15 - June 20, 2025" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Special Requests</label>
+        <textarea id="message" name="message" placeholder="Any additional details?" rows="4"></textarea>
+      </div>
+      
+      <button type="submit" class="btn">Submit Booking Request</button>
+    </form>
+
+    <p id="confirmation" style="display:none; color:green; margin-top:10px;">
+      Thank you! Your booking request has been sent successfully.
+    </p>
+  </div>
+</section>
+
+
+<!-- Link to external JS file -->
+<script src="js/script.js"></script>
+<!-- Footer -->
+<!-- Footer Section -->
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <h3>DreamTrip Africa Travel & Tour Agency</h3>
+      <p>Your trusted partner for unforgettable African adventures.</p>
+      
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#booking">Booking</a>
+        <a href="#testimonials">Testimonials</a>
+      </div>
+      
+      <p class="footer-copy">&copy; 2025 DreamTrip Africa. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
